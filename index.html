@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Cronomêtro</title>
+</head>
+<body>
+    <div class="max-width">
+        <div class="display">
+            <h1 id="counter">00:00:00</h1>
+        </div>
+        <div class="buttons">
+            <button class="bg-green" onclick="start();"><i class="fa-solid fa-play"></i></button>
+            <button class="bg-yellow" onclick="pause();"><i class="fa-solid fa-pause"></i></button>
+            <button class="bg-red" onclick="stop();"><i class="fa-solid fa-stop"></i></button>
+        </div>
+    </div>
+    <script src="cron.js"></script>
+</body>
+</html>
