@@ -1,70 +1,84 @@
-*{
-    margin: 0 auto;
-    padding: 0;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-body{
-    background: #2e2e2e;
+html {
+  font-size: 62.5%;
 }
 
-.max-width{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 500px;
-    height: 250px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 10%;
-    background: #5c5b5b;
-    box-shadow: 0 0 5px;
-    text-align: center;
-    border-radius: 50px;
-    box-shadow: 0 0 1em rgb(255, 255, 255);
+body {
+  background: #2e3440;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.display{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.308);
-    width: 100%;
-    height: 30%;
-    margin-bottom: 15px;
+.cronometer {
+  padding: 6rem 0;
+  max-width: 42rem;
+  width: 100%;
+
+  background: #4c566a;
+  border-radius: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    color:#FFF;
-    line-height: 2;
+.display {
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  width: 100%;
 }
 
-button{
-    padding: 10px;
-    border: none;
-    font-family: 'Segoe UI';
-    font-size: 1.1em;
-    transition: all .5s;
-    cursor: pointer;
-    border-radius:10px ;
+.display h1 {
+  color: #f1faee;
+  padding: 2rem;
+  margin: 0;
 }
 
-button:hover{
-    filter: brightness(0.7);
+.controls {
+  margin-top: 1rem;
 }
 
-.bg-green{
-    background-color: #710ca0;
-    color: #fff;
+.controls > button {
+  border: none;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 0.8rem 2.5rem;
+  margin: 0 0.25rem;
+  transition: all 0.5s;
 }
 
-.bg-yellow{
-    background-color: #1c3103;
-    color: #fff;
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  filter: brightness(0.8);
 }
 
-.bg-red{
-    background-color: #640404;
-    color: #fff;
+.bnt-play,
+.bnt-pause,
+.bnt-stop {
+  color: #f1faee;
+}
+
+.bnt-play {
+  background-color: #2a9d8f;
+}
+
+.bnt-pause {
+  background-color: #0096c7;
+}
+
+.bnt-stop {
+  background-color: #e63946;
 }
